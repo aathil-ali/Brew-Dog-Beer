@@ -201,6 +201,7 @@ export default {
     async sortOptionByContent(newOption) {
       // Filters the beer list based on the selected content sorting option
       try {
+        this.currentPage = 1 ;
         await this.fetchBeers();
 
         let data;
